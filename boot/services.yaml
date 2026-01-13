@@ -1,0 +1,25 @@
+# Hold On - Services Configuration
+# Defines services and their configurations
+
+services:
+  frontend:
+    name: "Hold On Mobile App"
+    type: "react-native-expo"
+    port: 19000
+    entry: "systems/frontend/App.js"
+    dependencies:
+      - node
+      - expo
+    commands:
+      start: "npm start"
+      android: "npm run android"
+      build: "npm run build:android"
+
+environments:
+  development:
+    expo_dev: true
+    hot_reload: true
+    
+  production:
+    expo_dev: false
+    minify: true
