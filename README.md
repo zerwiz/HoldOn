@@ -13,6 +13,8 @@ A minimalist mobile game for Android where you test how long you can keep your f
 - Instant feedback on release
 - Minimalist design
 - No distractions (no scores, no leaderboards)
+- Smooth animations and haptic feedback
+- Optimized performance
 
 ## Project Structure
 
@@ -79,18 +81,18 @@ npm run android
 
 **See [docs/BUILD_APK.md](docs/BUILD_APK.md) for detailed instructions.**
 
-**Note:** You'll need placeholder assets first. Run:
+**Note:** Assets are already included in the repository. If you need to regenerate them, run:
 ```bash
-bash scripts/create-placeholder-assets.sh
+node scripts/create-assets.js
 ```
-Or manually create the required image files (see `assets/README.md`).
 
 ## Development
 
 The app is built with:
 - **React Native** - Mobile framework
 - **Expo** - Development platform and tooling
-- **React Native Gesture Handler** - For touch tracking
+- **Expo Haptics** - Haptic feedback
+- **React Native Animated** - Smooth animations
 
 ## License
 
