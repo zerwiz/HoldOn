@@ -9,6 +9,9 @@
     "web": "expo start --web",
     "build:android": "eas build --platform android --profile preview",
     "build:android:local": "eas build --platform android --profile preview --local",
+    "build:android:production": "eas build --platform android --profile production",
+    "build:android:production:aab": "eas build --platform android --profile production --type app-bundle",
+    "build:android:native": "expo prebuild --platform android && cd android && ./gradlew assembleRelease",
     "build:ios": "eas build --platform ios"
   },
   "dependencies": {

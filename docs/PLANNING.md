@@ -47,9 +47,9 @@
 - [ ] Test on various Android devices (requires physical testing)
 
 ### Phase 5: Deployment
-- [ ] Configure app.json for Play Store
-- [ ] Generate app icon and splash screen
-- [ ] Build production APK/AAB
+- [x] Configure app.json for Play Store
+- [x] Generate app icon and splash screen
+- [ ] Build production APK/AAB (run: `npm run build:android:production`)
 - [ ] Submit to Google Play Console
 
 ## Architecture
